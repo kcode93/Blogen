@@ -9370,5 +9370,12 @@ textarea.form-control-lg {
       margin-top: 0.5rem; }
   #actions .btn {
     margin-bottom: 0.5rem; }
+  #actions-details .col-md-3 {
+    margin-bottom: 1rem; }
+    #actions-details .col-md-3 .btn {
+      padding: 1rem 0.5rem; }
   #posts #pagination {
-    margin-left: 0.8rem; } }
+    margin-left: 0.8rem; }
+  #backBtn-details {
+    display: flex;
+    align-items: center; } }
