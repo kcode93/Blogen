@@ -54,3 +54,41 @@
 		}
 	}
 }
+
+#backBtn {
+	&-posts {
+		i {
+			color: $primary;
+		}
+
+		&:hover {
+			i {
+				color: darken($primary, 5);
+			}
+		}
+	}
+
+	&-categories {
+		i {
+			color: $success;
+		}
+
+		&:hover {
+			i {
+				color: darken($success, 5);
+			}
+		}
+	}
+
+	&-users {
+		i {
+			color: $warning;
+		}
+
+		&:hover {
+			i {
+				color: darken($warning, 5);
+			}
+		}
+	}
+}

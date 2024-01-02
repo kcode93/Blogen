@@ -9333,6 +9333,24 @@ textarea.form-control-lg {
 .modal#addUserModal .form-control:hover {
   border: 1.4px solid #ffc107; }
 
+#backBtn-posts i {
+  color: #0d6efd; }
+
+#backBtn-posts:hover i {
+  color: #0262ef; }
+
+#backBtn-categories i {
+  color: #198754; }
+
+#backBtn-categories:hover i {
+  color: #157147; }
+
+#backBtn-users i {
+  color: #ffc107; }
+
+#backBtn-users:hover i {
+  color: #edb100; }
+
 /** Media queries **/
 /** X-Small devices (portrait phones, less than 576px) **/
 @media (max-width: 575.98px) {

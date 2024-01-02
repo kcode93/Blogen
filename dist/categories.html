@@ -23,7 +23,7 @@
 		/>
 		<!--Custom style sheets-->
 		<link rel="stylesheet" href="./resources/css/main.css" type="text/css" />
-		<title>Blogen | Posts</title>
+		<title>Blogen | Categories</title>
 	</head>
 	<body>
 		<!--main-nav-->
@@ -51,10 +51,10 @@
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="posts.html">Posts</a>
+							<a class="nav-link" href="posts.html">Posts</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="categories.html">Categories</a>
+							<a class="nav-link active" href="categories.html">Categories</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="users.html">Users</a>
@@ -96,11 +96,11 @@
 		</nav>
 
 		<!--showcase/header-->
-		<header id="main-header" class="py-3 bg-primary text-white">
+		<header id="main-header" class="py-3 bg-success text-white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<h1><i class="fa-regular fa-pen-to-square"></i> Posts</h1>
+						<h1><i class="fa-solid fa-list-ul"></i> Categories</h1>
 					</div>
 				</div>
 			</div>
@@ -112,7 +112,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<a
-							id="backBtn-posts"
+							id="backBtn-categories"
 							href="index.html"
 							class="btn d-none d-md-flex align-items-center"
 						>
@@ -125,10 +125,10 @@
 							<input
 								type="text"
 								class="form-control"
-								placeholder="Search Posts..."
+								placeholder="Search Categories..."
 							/>
 							<div class="input-group-append">
-								<button class="btn btn-primary mx-4 px-5 py-2">Search</button>
+								<button class="btn btn-success mx-4 px-5 py-2">Search</button>
 							</div>
 						</div>
 					</div>
@@ -137,20 +137,19 @@
 		</section>
 
 		<!--Posts-->
-		<section id="posts">
+		<section id="categories">
 			<div class="container">
 				<div class="row">
 					<div class="col">
 						<div class="card">
 							<div class="card-header">
-								<h4>All Posts</h4>
+								<h4>All Categories</h4>
 							</div>
 							<table class="table table-striped text-center">
 								<thead class="table-dark">
 									<tr>
 										<th>ID</th>
 										<th>Title</th>
-										<th>Category</th>
 										<th>Date</th>
 										<th></th>
 									</tr>
@@ -158,7 +157,6 @@
 								<tbody>
 									<tr>
 										<th>1</th>
-										<th>Post One</th>
 										<th>Web Development</th>
 										<th>Jan 02 2024</th>
 										<th>
@@ -170,7 +168,6 @@
 
 									<tr>
 										<th>2</th>
-										<th>Post Two</th>
 										<th>AI Development</th>
 										<th>Dec 10 2023</th>
 										<th>
@@ -182,7 +179,6 @@
 
 									<tr>
 										<th>3</th>
-										<th>Post Three</th>
 										<th>Network & IT</th>
 										<th>OCT 20 2023</th>
 										<th>
@@ -194,7 +190,6 @@
 
 									<tr>
 										<th>4</th>
-										<th>Post Four</th>
 										<th>New Technologies</th>
 										<th>Jul 15 2023</th>
 										<th>
@@ -206,7 +201,6 @@
 
 									<tr>
 										<th>5</th>
-										<th>Post Five</th>
 										<th>Coding & Scripting</th>
 										<th>Feb 11 2023</th>
 										<th>
