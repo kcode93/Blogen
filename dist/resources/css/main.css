@@ -9308,10 +9308,15 @@ textarea.form-control-lg {
   font-weight: bold;
   padding: 0.2rem 0; }
 
+.modal .close {
+  padding: 1rem; }
+
 .modal .fa-rectangle-xmark {
-  color: #fff; }
+  color: #fff;
+  padding: 0; }
   .modal .fa-rectangle-xmark:hover {
-    color: #dc3545; }
+    color: #fff;
+    background-color: #dc3545; }
 
 .modal#add .form-control {
   border: 1.4px solid #ccc; }

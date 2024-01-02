@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Bootstrap 4 CMS Dashboard" />
+		<meta
+			name="keywords"
+			content="CMS, Bootstrap 4, Dashboard, website, Portal"
+		/>
+		<meta name="author" content="Kenneth Garcia" />
+		<!-- Font Awesome CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!--Custom style sheets-->
+		<link rel="stylesheet" href="./resources/css/main.css" type="text/css" />
+		<title>Blogen | Posts</title>
+	</head>
+	<body>
+		<!--main-nav-->
+		<nav id="main-nav" class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					Blogen <i class="fa-brands fa-blogger"></i>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="index.html"
+								>Dashboard</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="posts.html">Posts</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="categories.html">Categories</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="users.html">Users</a>
+						</li>
+					</ul>
+
+					<ul id="user-controls" class="navbar-nav ms-auto">
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<i class="fas fa-user"></i> Welcome Kenneth!
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="profile.html">
+										<i class="fas fa-user-circle"></i> Profile
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="settings.html">
+										<i class="fas fa-cog"></i> Settings
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">
+								<i class="fa-solid fa-power-off"></i> Logout
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!--showcase/header-->
+		<header id="main-header" class="py-3 bg-primary text-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1><i class="fa-regular fa-pen-to-square"></i> Posts</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--Search Section-->
+		<section id="search" class="py-4 mb-4 bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 ms-auto">
+						<div class="input-group d-flex justify-content-between">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Search Posts..."
+							/>
+							<div class="input-group-append">
+								<button class="btn btn-primary mx-4 px-5 py-2">Search</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Stats-->
+		<section id="stats">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="card">
+							<div class="card-header">
+								<h4>Latest Posts</h4>
+							</div>
+							<table class="table table-striped text-center">
+								<thead class="table-dark">
+									<tr>
+										<th>ID</th>
+										<th>Title</th>
+										<th>Category</th>
+										<th>Date</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>1</th>
+										<th>Post One</th>
+										<th>Web Development</th>
+										<th>Jan 02 2024</th>
+										<th>
+											<a href="details.html" class="btn btn-secondary">
+												<i class="fas fa-angle-double-right"></i> Details
+											</a>
+										</th>
+									</tr>
+
+									<tr>
+										<th>2</th>
+										<th>Post Two</th>
+										<th>AI Development</th>
+										<th>Dec 10 2023</th>
+										<th>
+											<a href="details.html" class="btn btn-secondary">
+												<i class="fas fa-angle-double-right"></i> Details
+											</a>
+										</th>
+									</tr>
+
+									<tr>
+										<th>3</th>
+										<th>Post Three</th>
+										<th>Network & IT</th>
+										<th>OCT 20 2023</th>
+										<th>
+											<a href="details.html" class="btn btn-secondary">
+												<i class="fas fa-angle-double-right"></i> Details
+											</a>
+										</th>
+									</tr>
+
+									<tr>
+										<th>4</th>
+										<th>Post Four</th>
+										<th>New Technologies</th>
+										<th>Jul 15 2023</th>
+										<th>
+											<a href="details.html" class="btn btn-secondary">
+												<i class="fas fa-angle-double-right"></i> Details
+											</a>
+										</th>
+									</tr>
+
+									<tr>
+										<th>5</th>
+										<th>Post Five</th>
+										<th>Coding & Scripting</th>
+										<th>Feb 11 2023</th>
+										<th>
+											<a href="details.html" class="btn btn-secondary">
+												<i class="fas fa-angle-double-right"></i> Details
+											</a>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+
+							<nav class="ms-4">
+								<ul class="pagination">
+									<li class="page-item disabled">
+										<a href="#" class="page-link">Previous</a>
+									</li>
+									<li class="page-item active">
+										<a href="#" class="page-link">1</a>
+									</li>
+									<li class="page-item">
+										<a href="#" class="page-link">2</a>
+									</li>
+									<li class="page-item">
+										<a href="#" class="page-link">3</a>
+									</li>
+									<li class="page-item">
+										<a href="#" class="page-link">Next</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-dark text-white mt-5 p-5" id="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<p class="lead text-center">
+							Copyright &copy; <span id="year"></span> Blogen
+							<i class="fa-brands fa-blogger"></i>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JQuery CDN -->
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<!-- Bootstrap JS & Popper JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+			integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+			crossorigin="anonymous"
+		></script>
+		<!-- Custom JS Scripts -->
+		<script src="./resources/js/main.js"></script>
+	</body>
+</html>

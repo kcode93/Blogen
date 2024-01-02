@@ -10,11 +10,17 @@
 		padding: 0.2rem 0;
 	}
 
+	.close {
+		padding: 1rem;
+	}
+
 	.fa-rectangle-xmark {
 		color: $white;
+		padding: 0;
 
 		&:hover {
-			color: $danger;
+			color: $white;
+			background-color: $danger;
 		}
 	}
 
