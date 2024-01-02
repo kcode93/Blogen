@@ -133,7 +133,7 @@
 					<div class="col-md-3">
 						<a
 							href="#"
-							class="btn btn-warning btn-block w-100"
+							class="btn btn-warning text-white btn-block w-100"
 							data-toggle="modal"
 							data-target="#addUserModal"
 						>
@@ -149,7 +149,9 @@
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header bg-primary text-white">
-						<h5 class="modal-title">Add Post</h5>
+						<h5 class="modal-title">
+							<i class="fa-solid fa-message"></i> Add Post
+						</h5>
 						<button class="close btn" data-dismiss="modal">
 							<i class="fa-solid fa-rectangle-xmark fa-2x"></i>
 						</button>
@@ -201,7 +203,7 @@
 
 					<div class="modal-footer">
 						<button class="btn btn-primary" data-dismiss="modal">
-							Save Changes
+							Add Post
 						</button>
 					</div>
 				</div>
@@ -213,7 +215,9 @@
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header bg-success text-white">
-						<h5 class="modal-title">Add Category</h5>
+						<h5 class="modal-title">
+							<i class="fa-solid fa-list"></i> Add Category
+						</h5>
 						<button class="close btn" data-dismiss="modal">
 							<i class="fa-solid fa-rectangle-xmark fa-2x"></i>
 						</button>
@@ -229,8 +233,51 @@
 					</div>
 
 					<div class="modal-footer">
-						<button class="btn btn-primary" data-dismiss="modal">
-							Save Changes
+						<button class="btn btn-success" data-dismiss="modal">
+							Add Category
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--AddUserModal-->
+		<div class="modal fade" id="addUserModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header bg-warning text-white">
+						<h5 class="modal-title">
+							<i class="fa-solid fa-user-plus"></i> Add User
+						</h5>
+						<button class="close btn" data-dismiss="modal">
+							<i class="fa-solid fa-rectangle-xmark fa-2x"></i>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="nane">Name</label>
+								<input type="text" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label for="confirmPassword">Confirm Password</label>
+								<input type="password" class="form-control" />
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button class="btn btn-warning text-white" data-dismiss="modal">
+							Add User
 						</button>
 					</div>
 				</div>
