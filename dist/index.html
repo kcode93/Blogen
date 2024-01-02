@@ -144,6 +144,134 @@
 			</div>
 		</section>
 
+		<!--Stats-->
+		<section id="stats">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="card">
+							<div class="card-header">
+								<h4>Latest Posts</h4>
+							</div>
+							<table class="table table-striped text-center">
+								<thead class="table-dark">
+									<tr>
+										<th>ID</th>
+										<th>Title</th>
+										<th>Category</th>
+										<th>Date</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>1</th>
+										<th>Post One</th>
+										<th>Web Development</th>
+										<th>Jan 02 2024</th>
+										<th>
+											<a href="details.html" class="btn btn-secondary">
+												<i class="fas fa-angle-double-right"></i> Details
+											</a>
+										</th>
+									</tr>
+
+									<tr>
+										<th>2</th>
+										<th>Post Two</th>
+										<th>AI Development</th>
+										<th>Dec 10 2023</th>
+										<th>
+											<a href="details.html" class="btn btn-secondary">
+												<i class="fas fa-angle-double-right"></i> Details
+											</a>
+										</th>
+									</tr>
+
+									<tr>
+										<th>3</th>
+										<th>Post Three</th>
+										<th>Network & IT</th>
+										<th>OCT 20 2023</th>
+										<th>
+											<a href="details.html" class="btn btn-secondary">
+												<i class="fas fa-angle-double-right"></i> Details
+											</a>
+										</th>
+									</tr>
+
+									<tr>
+										<th>4</th>
+										<th>Post Four</th>
+										<th>New Technologies</th>
+										<th>Jul 15 2023</th>
+										<th>
+											<a href="details.html" class="btn btn-secondary">
+												<i class="fas fa-angle-double-right"></i> Details
+											</a>
+										</th>
+									</tr>
+
+									<tr>
+										<th>5</th>
+										<th>Post Five</th>
+										<th>Coding & Scripting</th>
+										<th>Feb 11 2023</th>
+										<th>
+											<a href="details.html" class="btn btn-secondary">
+												<i class="fas fa-angle-double-right"></i> Details
+											</a>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="card text-center bg-primary text-white mb-3">
+							<div class="card-body">
+								<h3>Posts</h3>
+								<h4 class="display-4 py-3">
+									<i class="fas fa-pencil-alt"></i>
+									<span class="fw-bold">5</span>
+								</h4>
+								<a href="posts.html" class="btn btn-outline-light w-100 btn-sm"
+									>View</a
+								>
+							</div>
+						</div>
+
+						<div class="card text-center bg-success text-white mb-3">
+							<div class="card-body">
+								<h3>Categories</h3>
+								<h4 class="display-4 py-3">
+									<i class="fa-solid fa-folder-open"></i>
+									<span class="fw-bold">8</span>
+								</h4>
+								<a href="posts.html" class="btn btn-outline-light w-100 btn-sm"
+									>View</a
+								>
+							</div>
+						</div>
+
+						<div class="card text-center bg-warning text-white">
+							<div class="card-body">
+								<h3>Users</h3>
+								<h4 class="display-4 py-3">
+									<i class="fa-solid fa-users"></i>
+									<span class="fw-bold">20</span>
+								</h4>
+								<a href="posts.html" class="btn btn-outline-light w-100 btn-sm"
+									>View</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!--AddPostModal-->
 		<div class="modal fade" id="addPostModal">
 			<div class="modal-dialog modal-lg">
@@ -172,6 +300,9 @@
 									<option>AI Development</option>
 									<option>Coding & Scripting</option>
 									<option>Network & IT</option>
+									<option>Cyber Security</option>
+									<option>Hardware</option>
+									<option>Software</option>
 								</select>
 							</div>
 
@@ -209,6 +340,19 @@
 				</div>
 			</div>
 		</div>
+
+		<footer class="bg-dark text-white mt-5 p-5" id="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<p class="lead text-center">
+							Copyright &copy; <span id="year"></span> Blogen
+							<i class="fa-brands fa-blogger"></i>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<!--AddCategoryModal-->
 		<div class="modal fade" id="addCategoryModal">
