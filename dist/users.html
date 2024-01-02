@@ -23,7 +23,7 @@
 		/>
 		<!--Custom style sheets-->
 		<link rel="stylesheet" href="./resources/css/main.css" type="text/css" />
-		<title>Blogen | Categories</title>
+		<title>Blogen | Users</title>
 	</head>
 	<body>
 		<!--main-nav-->
@@ -54,10 +54,10 @@
 							<a class="nav-link" href="posts.html">Posts</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="categories.html">Categories</a>
+							<a class="nav-link" href="categories.html">Categories</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="users.html">Users</a>
+							<a class="nav-link active" href="users.html">Users</a>
 						</li>
 					</ul>
 
@@ -96,11 +96,11 @@
 		</nav>
 
 		<!--showcase/header-->
-		<header id="main-header" class="py-3 bg-success text-white">
+		<header id="main-header" class="py-3 bg-warning text-white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<h1><i class="fa-solid fa-list-ul"></i> Categories</h1>
+						<h1><i class="fa-solid fa-users"></i> Users</h1>
 					</div>
 				</div>
 			</div>
@@ -112,7 +112,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<a
-							id="backBtn-categories"
+							id="backBtn-users"
 							href="index.html"
 							class="btn d-none d-md-flex align-items-center"
 						>
@@ -125,10 +125,12 @@
 							<input
 								type="text"
 								class="form-control"
-								placeholder="Search Categories..."
+								placeholder="Search Users..."
 							/>
 							<div class="input-group-append">
-								<button class="btn btn-success mx-4 px-5 py-2">Search</button>
+								<button class="btn btn-warning text-white mx-4 px-5 py-2">
+									Search
+								</button>
 							</div>
 						</div>
 					</div>
@@ -136,31 +138,31 @@
 			</div>
 		</section>
 
-		<!--Posts-->
-		<section id="categories">
+		<!--Users-->
+		<section id="posts">
 			<div class="container">
 				<div class="row">
 					<div class="col">
 						<div class="card">
 							<div class="card-header">
-								<h4>All Categories</h4>
+								<h4>All Users</h4>
 							</div>
 							<table class="table table-striped text-center">
 								<thead class="table-dark">
 									<tr>
 										<th>ID</th>
-										<th>Title</th>
-										<th>Date</th>
+										<th>Name</th>
+										<th>Email</th>
 										<th></th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<th>1</th>
-										<th>Web Development</th>
-										<th>Jan 02 2024</th>
+										<th>John Doe</th>
+										<th>johnDoe@company.com</th>
 										<th>
-											<a href="user-details.html" class="btn btn-secondary">
+											<a href="details.html" class="btn btn-secondary">
 												<i class="fas fa-angle-double-right"></i> Details
 											</a>
 										</th>
@@ -168,10 +170,10 @@
 
 									<tr>
 										<th>2</th>
-										<th>AI Development</th>
-										<th>Dec 10 2023</th>
+										<th>Janice Doe</th>
+										<th>janiceDoe@company.com</th>
 										<th>
-											<a href="user-details.html" class="btn btn-secondary">
+											<a href="details.html" class="btn btn-secondary">
 												<i class="fas fa-angle-double-right"></i> Details
 											</a>
 										</th>
@@ -179,10 +181,10 @@
 
 									<tr>
 										<th>3</th>
-										<th>Network & IT</th>
-										<th>OCT 20 2023</th>
+										<th>Curt Kabal</th>
+										<th>CurtK@company.com</th>
 										<th>
-											<a href="user-details.html" class="btn btn-secondary">
+											<a href="details.html" class="btn btn-secondary">
 												<i class="fas fa-angle-double-right"></i> Details
 											</a>
 										</th>
@@ -190,10 +192,10 @@
 
 									<tr>
 										<th>4</th>
-										<th>New Technologies</th>
-										<th>Jul 15 2023</th>
+										<th>Fernando Fresh</th>
+										<th>FernanFresh@company.com</th>
 										<th>
-											<a href="user-details.html" class="btn btn-secondary">
+											<a href="details.html" class="btn btn-secondary">
 												<i class="fas fa-angle-double-right"></i> Details
 											</a>
 										</th>
@@ -201,16 +203,36 @@
 
 									<tr>
 										<th>5</th>
-										<th>Coding & Scripting</th>
-										<th>Feb 11 2023</th>
+										<th>Malcom Menzer</th>
+										<th>MalMez@company.com</th>
 										<th>
-											<a href="user-details.html" class="btn btn-secondary">
+											<a href="details.html" class="btn btn-secondary">
 												<i class="fas fa-angle-double-right"></i> Details
 											</a>
 										</th>
 									</tr>
 								</tbody>
 							</table>
+
+							<nav id="pagination">
+								<ul class="pagination">
+									<li class="page-item disabled">
+										<a href="#" class="page-link">Previous</a>
+									</li>
+									<li class="page-item active">
+										<a href="#" class="page-link">1</a>
+									</li>
+									<li class="page-item">
+										<a href="#" class="page-link">2</a>
+									</li>
+									<li class="page-item">
+										<a href="#" class="page-link">3</a>
+									</li>
+									<li class="page-item">
+										<a href="#" class="page-link">Next</a>
+									</li>
+								</ul>
+							</nav>
 						</div>
 					</div>
 				</div>
