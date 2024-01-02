@@ -9297,7 +9297,7 @@ textarea.form-control-lg {
 #main-nav {
   padding: 0; }
   #main-nav #user-controls {
-    margin-left: auto; }
+    color: red; }
 
 /** Pages **/
 /** Modules **/
