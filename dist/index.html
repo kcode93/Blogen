@@ -106,6 +106,108 @@
 			</div>
 		</header>
 
+		<!--Actions Section-->
+		<section id="actions" class="py-4 mb-4 bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a
+							href="#"
+							class="btn btn-primary btn-block w-100"
+							data-toggle="modal"
+							data-target="#addPostModal"
+						>
+							<i class="fas fa-plus"></i> Add Post
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a
+							href="#"
+							class="btn btn-success btn-block w-100"
+							data-toggle="modal"
+							data-target="#addCategoryModal"
+						>
+							<i class="fas fa-plus"></i> Add Category
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a
+							href="#"
+							class="btn btn-warning btn-block w-100"
+							data-toggle="modal"
+							data-target="#addUserModal"
+						>
+							<i class="fas fa-plus"></i> Add User
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--AddPostModal-->
+		<div class="modal fade" id="addPostModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header bg-primary text-white">
+						<h5 class="modal-title">Add Post</h5>
+						<button class="close btn" data-dismiss="modal">
+							<i class="fa-solid fa-rectangle-xmark fa-2x"></i>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="title">Title</label>
+								<input type="text" class="form-control" />
+							</div>
+
+							<div class="form-group">
+								<label for="category">Category</label>
+								<select class="form-control">
+									<option>Web Development</option>
+									<option>New technologies</option>
+									<option>AI Development</option>
+									<option>Coding & Scripting</option>
+									<option>Network & IT</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="image">Upload Image</label>
+								<div class="custom-file">
+									<input
+										type="file"
+										class="custom-file-input form-control"
+										id="postImage"
+									/>
+									<label for="postImage" class="custom-file label"
+										>Choose File</label
+									>
+								</div>
+								<small class="form-text text-muted">Max Size 3mb.</small>
+							</div>
+
+							<div class="form-group">
+								<label for="postBody">Body</label>
+								<textarea
+									id="editor"
+									name="editor1"
+									class="form-control"
+								></textarea>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button class="btn btn-primary" data-dismiss="modal">
+							Save Changes
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- JQuery CDN -->
 		<script
 			src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -123,6 +225,9 @@
 			integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
 			crossorigin="anonymous"
 		></script>
+		<!--CKEditor Script-->
+		<script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
+
 		<!-- Custom JS Scripts -->
 		<script src="./resources/js/main.js"></script>
 	</body>
