@@ -9301,5 +9301,31 @@ textarea.form-control-lg {
 
 /** Pages **/
 /** Modules **/
+.modal .modal-title {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.5rem; }
+
+.modal label {
+  font-weight: bold;
+  padding: 0.2rem 0; }
+
+.modal .fa-rectangle-xmark {
+  color: #fff; }
+  .modal .fa-rectangle-xmark:hover {
+    color: #dc3545; }
+
+.modal#add .form-control {
+  border: 1.4px solid #ccc; }
+
+.modal#addPostModal .form-control:hover {
+  border: 1.4px solid #0d6efd; }
+
+.modal#addCategoryModal .form-control:hover {
+  border: 1.4px solid #198754; }
+
+.modal#addUserModal .form-control:hover {
+  border: 1.4px solid #ffc107; }
+
 /** Media queries **/
 /** X-Small devices (portrait phones, less than 576px) **/

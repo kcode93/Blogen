@@ -1,0 +1,50 @@
+.modal {
+	.modal-title {
+		text-transform: capitalize;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+
+	label {
+		font-weight: bold;
+		padding: 0.2rem 0;
+	}
+
+	.fa-rectangle-xmark {
+		color: $white;
+
+		&:hover {
+			color: $danger;
+		}
+	}
+
+	&#add {
+		.form-control {
+			border: 1.4px solid #ccc;
+		}
+
+		&PostModal {
+			.form-control {
+				&:hover {
+					border: 1.4px solid $primary;
+				}
+			}
+		}
+
+		&CategoryModal {
+			.form-control {
+				&:hover {
+					border: 1.4px solid $success;
+				}
+			}
+		}
+
+		&UserModal {
+			.form-control {
+				&:hover {
+					border: 1.4px solid $warning;
+				}
+			}
+		}
+	}
+}
