@@ -91,4 +91,16 @@
 			}
 		}
 	}
+
+	&-details {
+		i {
+			color: gray;
+		}
+
+		&:hover {
+			i {
+				color: darken(gray, 8);
+			}
+		}
+	}
 }

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Bootstrap 4 CMS Dashboard" />
+		<meta
+			name="keywords"
+			content="CMS, Bootstrap 4, Dashboard, website, Portal"
+		/>
+		<meta name="author" content="Kenneth Garcia" />
+		<!-- Font Awesome CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!--Custom style sheets-->
+		<link rel="stylesheet" href="./resources/css/main.css" type="text/css" />
+		<title>Blogen | Details</title>
+	</head>
+	<body>
+		<!--main-nav-->
+		<nav id="main-nav" class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					Blogen <i class="fa-brands fa-blogger"></i>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="index.html"
+								>Dashboard</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="posts.html">Posts</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="categories.html">Categories</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="users.html">Users</a>
+						</li>
+					</ul>
+
+					<ul id="user-controls" class="navbar-nav ms-auto">
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<i class="fas fa-user"></i> Welcome Kenneth!
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="profile.html">
+										<i class="fas fa-user-circle"></i> Profile
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="settings.html">
+										<i class="fas fa-cog"></i> Settings
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">
+								<i class="fa-solid fa-power-off"></i> Logout
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!--showcase/header-->
+		<header
+			id="main-header"
+			class="py-3 bg-dark text-white border-top border-light"
+		>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>Post One Details</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--Actions Section-->
+		<section id="actions" class="py-4 mb-4 bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a
+							id="backBtn-details"
+							href="index.html"
+							class="btn d-md-flex align-items-center"
+						>
+							<i class="fa-solid fa-circle-left fa-2x"></i>
+							<span class="fw-bold ms-2">Back to Dashboard</span>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="btn btn-success btn-block w-100 h-100">
+							<i class="fas fa-check me-2"></i> Save Changes
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="btn btn-danger text-white btn-block w-100 h-100">
+							<i class="fas fa-trash me-2"></i> Delete Post
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Details-->
+		<section id="details">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="card">
+							<div class="card-header">
+								<h4>Edit Post</h4>
+							</div>
+							<div class="card-body">
+								<form>
+									<div class="form-group">
+										<label for="title">Title</label>
+										<input type="text" value="Post One" class="form-control" />
+									</div>
+
+									<div class="form-group">
+										<label for="category">Category</label>
+										<select class="form-control">
+											<option selected>Web Development</option>
+											<option>New technologies</option>
+											<option>AI Development</option>
+											<option>Coding & Scripting</option>
+											<option>Network & IT</option>
+											<option>Cyber Security</option>
+											<option>Hardware</option>
+											<option>Software</option>
+										</select>
+									</div>
+
+									<div class="form-group">
+										<label for="image">Upload Image</label>
+										<div class="custom-file">
+											<input
+												type="file"
+												class="custom-file-input form-control"
+												id="postImage"
+											/>
+											<label for="postImage" class="custom-file label"
+												>Choose File</label
+											>
+										</div>
+										<small class="form-text text-muted">Max Size 3mb.</small>
+									</div>
+
+									<div class="form-group">
+										<label for="postBody">Body</label>
+										<textarea id="editor" name="editor1" class="form-control">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, magnam. Veniam deleniti dolore veritatis repellendus corporis, deserunt quisquam debitis esse alias sint pariatur expedita cupiditate?
+									</textarea
+										>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-dark text-white mt-5 p-5" id="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<p class="lead text-center">
+							Copyright &copy; <span id="year"></span> Blogen
+							<i class="fa-brands fa-blogger"></i>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JQuery CDN -->
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<!-- Bootstrap JS & Popper JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+			integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+			crossorigin="anonymous"
+		></script>
+		<!--CKEditor Script-->
+		<script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
+		<!-- Custom JS Scripts -->
+		<script src="./resources/js/main.js"></script>
+	</body>
+</html>

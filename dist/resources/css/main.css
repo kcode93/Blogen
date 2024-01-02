@@ -9351,6 +9351,12 @@ textarea.form-control-lg {
 #backBtn-users:hover i {
   color: #edb100; }
 
+#backBtn-details i {
+  color: gray; }
+
+#backBtn-details:hover i {
+  color: #6c6c6c; }
+
 /** Media queries **/
 /** X-Small devices (portrait phones, less than 576px) **/
 @media (max-width: 575.98px) {
