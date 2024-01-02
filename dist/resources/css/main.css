@@ -9298,6 +9298,9 @@ textarea.form-control-lg {
   padding: 0; }
 
 /** Pages **/
+#posts #pagination {
+  margin-left: 2rem; }
+
 /** Modules **/
 .modal .modal-title {
   text-transform: capitalize;
@@ -9342,4 +9345,6 @@ textarea.form-control-lg {
       padding: 0.5rem 0;
       margin-top: 0.5rem; }
   #actions .btn {
-    margin-bottom: 0.5rem; } }
+    margin-bottom: 0.5rem; }
+  #posts #pagination {
+    margin-left: 0.8rem; } }
