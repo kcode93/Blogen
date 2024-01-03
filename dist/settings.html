@@ -23,7 +23,7 @@
 		/>
 		<!--Custom style sheets-->
 		<link rel="stylesheet" href="./resources/css/main.css" type="text/css" />
-		<title>Blogen | Details</title>
+		<title>Blogen | Settings</title>
 	</head>
 	<body>
 		<!--main-nav-->
@@ -103,7 +103,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<h1>Post One Details</h1>
+						<h1><i class="fas fa-cog"></i> Settings</h1>
 					</div>
 				</div>
 			</div>
@@ -128,70 +128,71 @@
 							<i class="fas fa-check me-2"></i> Save Changes
 						</a>
 					</div>
-					<div class="col-md-3">
-						<a
-							href="index.html"
-							class="btn btn-danger text-white btn-block w-100 h-100"
-						>
-							<i class="fas fa-trash me-2"></i> Delete Post
-						</a>
-					</div>
 				</div>
 			</div>
 		</section>
 
-		<!--Details-->
-		<section id="details">
+		<!--Settings-->
+		<section id="settings">
 			<div class="container">
 				<div class="row">
 					<div class="col">
 						<div class="card">
 							<div class="card-header">
-								<h4>Edit Post</h4>
+								<h4>Edit Settings</h4>
 							</div>
 							<div class="card-body">
 								<form>
-									<div class="form-group">
-										<label for="title">Title</label>
-										<input type="text" value="Post One" class="form-control" />
-									</div>
-
-									<div class="form-group">
-										<label for="category">Category</label>
-										<select class="form-control">
-											<option selected>Web Development</option>
-											<option>New technologies</option>
-											<option>AI Development</option>
-											<option>Coding & Scripting</option>
-											<option>Network & IT</option>
-											<option>Cyber Security</option>
-											<option>Hardware</option>
-											<option>Software</option>
-										</select>
-									</div>
-
-									<div class="form-group">
-										<label for="image">Upload Image</label>
-										<div class="custom-file">
-											<input
-												type="file"
-												class="custom-file-input form-control"
-												id="postImage"
-											/>
-											<label for="postImage" class="custom-file label"
-												>Choose File</label
-											>
+									<fieldset class="form-group">
+										<legend>Allow User Registration</legend>
+										<div class="form-check">
+											<label class="form-check-label">
+												<input
+													type="radio"
+													class="form-check-input"
+													value="Yes"
+													checked
+												/>
+												Yes
+											</label>
 										</div>
-										<small class="form-text text-muted">Max Size 3mb.</small>
-									</div>
 
-									<div class="form-group">
-										<label for="postBody">Body</label>
-										<textarea id="editor" name="editor1" class="form-control">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, magnam. Veniam deleniti dolore veritatis repellendus corporis, deserunt quisquam debitis esse alias sint pariatur expedita cupiditate?
-									</textarea
-										>
-									</div>
+										<div class="form-check">
+											<label class="form-check-label">
+												<input
+													type="radio"
+													class="form-check-input"
+													value="No"
+												/>
+												No
+											</label>
+										</div>
+									</fieldset>
+
+									<fieldset class="form-group">
+										<legend>Home Page Format</legend>
+										<div class="form-check">
+											<label class="form-check-label">
+												<input
+													type="radio"
+													class="form-check-input"
+													value="posts"
+												/>
+												Blog Page
+											</label>
+										</div>
+
+										<div class="form-check">
+											<label class="form-check-label">
+												<input
+													type="radio"
+													class="form-check-input"
+													value="page"
+												/>
+												Home Page
+											</label>
+										</div>
+									</fieldset>
 								</form>
 							</div>
 						</div>
