@@ -9378,4 +9378,8 @@ textarea.form-control-lg {
     margin-left: 0.8rem; }
   #backBtn-details {
     display: flex;
-    align-items: center; } }
+    align-items: center; }
+  #profile h3, #profile .h3 {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center; } }

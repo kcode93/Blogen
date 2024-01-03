@@ -23,7 +23,7 @@
 		/>
 		<!--Custom style sheets-->
 		<link rel="stylesheet" href="./resources/css/main.css" type="text/css" />
-		<title>Blogen | Dashboard</title>
+		<title>Blogen | Profile</title>
 	</head>
 	<body>
 		<!--main-nav-->
@@ -100,7 +100,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<h1><i class="fas fa-cog"></i> Dashboard</h1>
+						<h1><i class="fas fa-user"></i> User Profile</h1>
 					</div>
 				</div>
 			</div>
@@ -111,162 +111,80 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
-						<a
-							href="#"
-							class="btn btn-primary btn-block w-100"
-							data-toggle="modal"
-							data-target="#addPostModal"
-						>
-							<i class="fas fa-plus"></i> Add Post
+						<a href="index.html" class="btn btn-light btn-block w-100">
+							<i class="fas fa-arrow-left"></i> Back to Dashboard
 						</a>
 					</div>
 					<div class="col-md-3">
-						<a
-							href="#"
-							class="btn btn-success btn-block w-100"
-							data-toggle="modal"
-							data-target="#addCategoryModal"
-						>
-							<i class="fas fa-plus"></i> Add Category
+						<a href="#" class="btn btn-primary btn-block w-100">
+							<i class="fas fa-lock"></i> Change Password
 						</a>
 					</div>
 					<div class="col-md-3">
-						<a
-							href="#"
-							class="btn btn-warning text-white btn-block w-100"
-							data-toggle="modal"
-							data-target="#addUserModal"
-						>
-							<i class="fas fa-plus"></i> Add User
+						<a href="#" class="btn btn-danger text-white btn-block w-100">
+							<i class="fas fa-trash"></i> Delete Account
 						</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!--Stats-->
-		<section id="stats">
+		<!--Profile-->
+		<section id="profile">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
 						<div class="card">
 							<div class="card-header">
-								<h4>Latest Posts</h4>
+								<h4>User Profile</h4>
 							</div>
-							<table class="table table-striped text-center">
-								<thead class="table-dark">
-									<tr>
-										<th>ID</th>
-										<th>Title</th>
-										<th>Category</th>
-										<th>Date</th>
-										<th></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th>1</th>
-										<th>Post One</th>
-										<th>Web Development</th>
-										<th>Jan 02 2024</th>
-										<th>
-											<a href="details.html" class="btn btn-secondary">
-												<i class="fas fa-angle-double-right"></i> Details
-											</a>
-										</th>
-									</tr>
+							<div class="card-body">
+								<form>
+									<div class="form-group">
+										<label for="name">Name</label>
+										<input type="text" class="form-control" value="Kenneth" />
+									</div>
 
-									<tr>
-										<th>2</th>
-										<th>Post Two</th>
-										<th>AI Development</th>
-										<th>Dec 10 2023</th>
-										<th>
-											<a href="details.html" class="btn btn-secondary">
-												<i class="fas fa-angle-double-right"></i> Details
-											</a>
-										</th>
-									</tr>
+									<div class="form-group">
+										<label for="name">Email</label>
+										<input
+											type="email"
+											class="form-control"
+											value="Kenneth@compnay.com"
+										/>
+									</div>
 
-									<tr>
-										<th>3</th>
-										<th>Post Three</th>
-										<th>Network & IT</th>
-										<th>OCT 20 2023</th>
-										<th>
-											<a href="details.html" class="btn btn-secondary">
-												<i class="fas fa-angle-double-right"></i> Details
-											</a>
-										</th>
-									</tr>
-
-									<tr>
-										<th>4</th>
-										<th>Post Four</th>
-										<th>New Technologies</th>
-										<th>Jul 15 2023</th>
-										<th>
-											<a href="details.html" class="btn btn-secondary">
-												<i class="fas fa-angle-double-right"></i> Details
-											</a>
-										</th>
-									</tr>
-
-									<tr>
-										<th>5</th>
-										<th>Post Five</th>
-										<th>Coding & Scripting</th>
-										<th>Feb 11 2023</th>
-										<th>
-											<a href="details.html" class="btn btn-secondary">
-												<i class="fas fa-angle-double-right"></i> Details
-											</a>
-										</th>
-									</tr>
-								</tbody>
-							</table>
+									<div class="form-group">
+										<label for="name">Bio</label>
+										<textarea
+											name="editor"
+											id="editor"
+											cols="30"
+											rows="10"
+											class="form-control"
+										>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo delectus quidem tempore, cum maxime repellendus eaque aspernatur enim reprehenderit deserunt exercitationem, libero a rerum consequatur minus architecto incidunt odio nam facilis itaque alias quasi? Delectus cum fugit molestias dignissimos minus.
+									</textarea
+										>
+									</div>
+								</form>
+							</div>
 						</div>
 					</div>
 
 					<div class="col-md-3">
-						<div class="card text-center bg-primary text-white mb-3">
-							<div class="card-body">
-								<h3>Posts</h3>
-								<h4 class="display-4 py-3">
-									<i class="fa-regular fa-pen-to-square"></i>
-									<span class="fw-bold">5</span>
-								</h4>
-								<a href="posts.html" class="btn btn-outline-light w-100 btn-sm"
-									>View</a
-								>
-							</div>
-						</div>
-
-						<div class="card text-center bg-success text-white mb-3">
-							<div class="card-body">
-								<h3>Categories</h3>
-								<h4 class="display-4 py-3">
-									<i class="fa-solid fa-folder-open"></i>
-									<span class="fw-bold">8</span>
-								</h4>
-								<a href="posts.html" class="btn btn-outline-light w-100 btn-sm"
-									>View</a
-								>
-							</div>
-						</div>
-
-						<div class="card text-center bg-warning text-white">
-							<div class="card-body">
-								<h3>Users</h3>
-								<h4 class="display-4 py-3">
-									<i class="fa-solid fa-users"></i>
-									<span class="fw-bold">20</span>
-								</h4>
-								<a href="posts.html" class="btn btn-outline-light w-100 btn-sm"
-									>View</a
-								>
-							</div>
-						</div>
+						<h3>Profile Picture</h3>
+						<img
+							src="./resources/img/avatar.png"
+							alt="Avatar Picture"
+							class="img-fluid d-block mb-3"
+						/>
+						<button class="btn btn-primary btn-block mb-2 w-100">
+							Edit Profile Picture
+						</button>
+						<button class="btn btn-danger btn-block mb-2 w-100">
+							Remove Profile Picture
+						</button>
 					</div>
 				</div>
 			</div>
